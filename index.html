@@ -7,45 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <div class="container">
-        <h1>Kalkulator BMI</h1>
+        <div class="bmi-calculator">
+            <h1>Kalkulator BMI</h1>
 
-        <tr>
-            <td>Umur : </td><br>
-        </tr>
-        <tr>
-            <td>
-              <input type="text" class="text-input" id="age" autocomplete="off"><br><br>
-            </td>
-        </tr>
-
-        <tr>
-            <td>Gender : </td><br>
-        </tr>
-          
-        <tr>
-            <td>
-              <input type="radio" name="gender" id="laki-laki" value="laki_laki" checked> laki-laki
-              <input type="radio" name="gender" id="perempuan" value="perempuan"> Perempuan
-            </td><br>
-        </tr>
-
+            <div class="input">
+                <label for="age">Umur:</label>
+                <input type="text" id="age" autocomplete="off">
+            </div>
+            
+            <div class="input">
+                <label for="age">Jenis Kelamin:</label><br>
+                <input type="radio" name="gender" id="laki-laki" value="laki_laki" checked> Laki-laki
+                <input type="radio" name="gender" id="perempuan" value="perempuan"> Perempuan
+            </div>
         
-        <div class="input-container">
-            <label for="height">Tinggi Badan:</label>
-            <input type="number" id="height" placeholder="Height (cm)">
+            <div class="input">
+                <label for="height">Tinggi Badan (cm):</label>
+                <input type="text" id="height" placeholder="Height in cm">
+            </div>
+              
+            <div class="input">
+                <label for="weight">Berat Badan (kg):</label>
+                <input type="text" id="weight" placeholder="Weight in kg">
+            </div>
+              
+            <button type="submit" class="calculate">Hitung</button>
+                
+            <div class="result"></div>
         </div>
-    
-        <div class="input-container">
-            <label for="weight">Berat Badan:</label>
-            <input type="number" id="weight" placeholder="Weight (kg)">
-        </div>
-    
-        <button onclick="calculateBMI()">Hitung</button>
-        <div id="result"></div>
+            
+        <!-- <div class="bmi-status">
+              <div class="Underweight">Underweight: 0 - 18.5</div>
+              <div class="Normal">Normal: 18.5 - 25</div>
+              <div class="Overweight">Overweight: 25 - 30</div>
+              <div class="Obese">Obese: 30 - 35</div>
+            </div> -->
     </div>
-
-  <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
