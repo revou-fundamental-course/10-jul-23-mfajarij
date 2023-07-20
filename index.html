@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalkulator BMI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator BMI</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Kalkulator BMI</h1>
+        <div class="row-one">
+            <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">Umur</p>
+            <label class="container">
+            <input type="radio" name="radio" id="f"><p class="text">Perempuan</p>
+              <span class="checkmark"></span>
+            </label>
+            
+            <label class="container">
+                <input type="radio" name="radio" id="m"><p class="text">Laki-laki</p>
+                <span class="checkmark"></span>
+            </label>
+        </div>
     
+        <div class="input-container">
+            <label for="height">Tinggi Badan:</label>
+            <input type="number" id="height" placeholder="Height (cm)">
+        </div>
+    
+        <div class="input-container">
+            <label for="weight">Berat Badan:</label>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+        </div>
+    
+        <button onclick="calculateBMI()">Hitung</button>
+        <div id="result"></div>
+    </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
