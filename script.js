@@ -1,7 +1,7 @@
 // select Tombol Hitung
 var calculate = document.querySelector('.calculate');
 
-// Untuk Menambahkan Suaea
+// Untuk Menambahkan Event
 calculate.addEventListener('click', findBMI);
 
 // Fungsi untuk menghitung BMI
