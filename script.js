@@ -1,10 +1,10 @@
-// select the calculate button
+// select Tombol Hitung
 var calculate = document.querySelector('.calculate');
 
-// attach event listener to the button
+// Untuk Menambahkan Suaea
 calculate.addEventListener('click', findBMI);
 
-// function to find the BMI
+// Fungsi untuk menghitung BMI
 function findBMI() {
   var height = +document.querySelector('#height').value;
   var weight = +document.querySelector('#weight').value;
@@ -34,3 +34,5 @@ function showResult(bmi) {
   }
   result.innerHTML = `<div class=${bmiStatus}>Hasil perhitungan BMI ${bmi.toFixed(2)} dan Anda ${bmiStatus}.</div>`;
 }
+
+
